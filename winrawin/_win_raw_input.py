@@ -791,7 +791,9 @@ MOUSE_BUTTONS = {
     256: ('down', 5, 'thumb2'),
     512: ('up', 5, 'thumb2'),
     7865344: ('wheel-up', 2, 'wheel'),  # wheel turned
-    4287104000: ('wheel-down', 2, 'wheel')  # wheel turned
+    4287104000: ('wheel-down', 2, 'wheel'),  # wheel turned
+    4287105024: ('wheel-left', 2, 'wheel'), # wheel clicked left
+    7866368: ('wheel-right', 2, 'wheel') # wheel clicked right
 }
 
 KEY_EVENT_TYPE = {256: 'down', 257: 'up', 260: 'down'}  # 260 for multi-key-down (alt gr)
