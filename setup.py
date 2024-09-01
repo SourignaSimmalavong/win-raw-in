@@ -8,7 +8,7 @@ Homepage: https://github.com/holl-/win-raw-in
 
 setup(
     name='win-raw-in',
-    version='0.2.2',
+    version='0.2.3',
     author='Philipp Holl',
     author_email='philipp@mholl.de',
     packages=['winrawin'],

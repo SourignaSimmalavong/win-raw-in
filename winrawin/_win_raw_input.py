@@ -702,7 +702,9 @@ def _create_key_name_tables():
             keyboard_state[0x10] = shift_state * 0xFF
             vk = scan_code_to_vk.get(scan_code, 0)
             ret = ToUnicode(vk, scan_code, keyboard_state, name_buffer, len(name_buffer), 0)
-            if ret:
+            # "ret > 0" to avoid dead keys
+            # Extra check on name_buffer is needed for Programmer Dvorak layout
+            if ret > 0 and name_buffer.value != '':
                 # Sometimes two characters are written before the char we want,
                 # usually an accented one such as Â. Couldn't figure out why.
                 char = name_buffer.value[-1]

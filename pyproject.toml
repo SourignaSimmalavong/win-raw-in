@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "win-raw-in"
+dynamic = ["version"]
+description = "Enumerate raw input devices and receive input events with device ID on Windows"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Philipp Holl", email = "philipp@mholl.de" },
+]
+keywords = [
+    "hook",
+    "input",
+    "keyboard",
+    "mouse",
+    "raw",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "dataclasses",
+]
+
+[project.urls]
+Homepage = "https://github.com/holl-/win-raw-in"
+
+[tool.hatch.version]
+path = "winrawin/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/winrawin",
+]
