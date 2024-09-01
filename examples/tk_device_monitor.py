@@ -3,7 +3,7 @@ import time
 
 import tkinter as tk
 
-from winrawin import hook_raw_input_for_window, RawInputEvent, list_devices, Mouse, Keyboard
+from win_raw_in import hook_raw_input_for_window, RawInputEvent, list_devices, Mouse, Keyboard
 
 
 def tk_rgb(r, g, b):

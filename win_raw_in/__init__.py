@@ -8,4 +8,5 @@ Each event also references the `RawInputDevice` that triggered it.
 from ._api import hook_raw_input_for_window, RawInputDevice, Mouse, Keyboard, HID, RawInputEvent, list_devices
 
 
+__version__ = '0.2.3'
 __all__ = [key for key in globals().keys() if not key.startswith('_')]

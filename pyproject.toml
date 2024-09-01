@@ -34,7 +34,7 @@ dependencies = [
 Homepage = "https://github.com/holl-/win-raw-in"
 
 [tool.hatch.version]
-path = "winrawin/__init__.py"
+path = "win_raw_in/__init__.py"
 
 [tool.hatch.build.targets.sdist]
 include = [
