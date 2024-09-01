@@ -25,6 +25,13 @@ Get the latest (possible unstable) version:
 pip install git+https://github.com/holl-/win-raw-in.git
 ```
 
+Install from source:
+* Clone the repository
+```bash
+cd <win-raw-in_repository>
+pip install -e .
+````
+
 ## Examples
 
 ### List input devices

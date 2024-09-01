@@ -798,7 +798,12 @@ MOUSE_BUTTONS = {
     7866368: ('wheel-right', 2, 'wheel') # wheel clicked right
 }
 
-KEY_EVENT_TYPE = {256: 'down', 257: 'up', 260: 'down'}  # 260 for multi-key-down (alt gr)
+KEY_EVENT_TYPE = {
+    256: 'down',
+    257: 'up',
+    260: 'down',  # 260 for multi-key-down (alt gr)
+    261: 'up',    # 261 for multi-key-up (alt, e.g. when releasing alt+f)
+}
 
 MOUSE_TYPES = {
     0x0080: 'HID mouse',
